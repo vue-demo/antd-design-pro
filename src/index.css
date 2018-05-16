@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+}
+
+#root, body, html {
+	height: 100%;
+}
+
+.ant-layout {
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.root {
+	max-width: 414px;
+	margin: 0 auto;
+	-webkit-box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.5), -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.5), -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.5), -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+#components-layout-demo-custom-trigger .trigger {
+	font-size: 18px;
+	line-height: 64px;
+	padding: 0 24px;
+	cursor: pointer;
+	transition: color .3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+	color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+	height: 32px;
+	background: rgba(255, 255, 255, .2);
+	margin: 16px;
+}
+
+.ui-logo {
+	height: 64px;
+	position: relative;
+	line-height: 64px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	background-color: #002140;
+	background-image: url("./logo.svg");
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	overflow: hidden;
+}
+
+.ui-title {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 0 0 60px;
+	font-family: "Myriad Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.ant-layout-sider-collapsed .ui-title {
+	display: none;
+}
+
+.ui-trigger {
+	font-size: 20px;
+	line-height: 64px;
+	cursor: pointer;
+	-webkit-transition: all .3s, padding 0s;
+	transition: all .3s, padding 0s;
+	padding: 0 24px;
+}
+
+.ui-trigger:hover {
+	background: #e6f7ff;
+}
