@@ -2,14 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css'
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu,Card, Icon } from 'antd';
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
 
 class SiderDemo extends React.Component {
 
+  // constructor(props, context)
+  // 构造函数，在创建组件的时候调用一次。
+
+  // componentWillMount()
+  // 在组件挂载之前调用一次。如果在这个函数里面调用setState，本次的render函数可以看到更新后的state，并且只渲染一次。
+
+  // componentDidMount()
+  // 在组件挂载之后调用一次。这个时候，子主键也都挂载好了，可以在这里使用refs。
+
   state = {
     collapsed: false,
+    loading: true,
   };
 
   toggle = () => {
@@ -17,6 +27,14 @@ class SiderDemo extends React.Component {
       collapsed: !this.state.collapsed,
     });
   };
+
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({
+        loading: !this.state.loading,
+      });
+    },1000);
+  }
 
   render() {
     return (
@@ -61,7 +79,12 @@ class SiderDemo extends React.Component {
             />
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            Content
+            <Card loading={this.state.loading} title="Card title">
+              Whatever content
+            </Card>
+            <Card loading={this.state.loading} title="Card title">
+              Whatever content
+            </Card>
           </Content>
         </Layout>
       </Layout>

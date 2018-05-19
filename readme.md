@@ -79,11 +79,15 @@ $ npm run build
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import 'antd/dist/antd.css';
 import { Button } from 'antd';
 
-ReactDOM.render(<Button />, document.getElementById('root'));
+const Btn = ()=>(
+    <div>
+      <Button/>
+    </div
+  );
+
+ReactDOM.render(<Btn />, document.getElementById('root'));
 ````
 
 ### 按组件打包
