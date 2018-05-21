@@ -37,6 +37,11 @@ body {
 	margin: 16px;
 }
 
+.ant-menu-item-selected a{
+	/*display: inline-block;*/
+	color: #fff!important;
+}
+
 .ui-logo {
 	height: 64px;
 	position: relative;
@@ -44,7 +49,7 @@ body {
 	-webkit-transition: all .3s;
 	transition: all .3s;
 	background-color: #002140;
-	background-image: url("./logo.svg");
+	background-image: url("../logo.svg");
 	background-position: 15px center;
 	background-repeat: no-repeat;
 	background-size: 50px 50px;

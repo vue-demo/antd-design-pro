@@ -1,0 +1,76 @@
+.ui-rect-wrap {
+
+}
+
+.ui-rect {
+	line-height: 90px;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+.rect-blue {
+	background: #108ee9 !important
+}
+
+.rect-green {
+	background: #00a854 !important
+}
+
+.rect-orange {
+	background: #f56a00 !important
+}
+
+.rect-pink {
+	background: #f5317f !important
+}
+
+.ui-tabs-wrap {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.ui-charts {
+	height: 300px;
+}
+
+.ant-tabs {
+	background: #fff;
+}
+
+.ant-tabs-nav-container {
+	padding-left: 15px;
+}
+
+.icon {
+	margin-right: 24px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	background-color: #f5f5f5;
+	border-radius: 20px;
+}
+
+.icon.on {
+	background-color: #314659;
+	color: #fff;
+}
+
+.ui-list-n {
+	float: right;
+	padding-right: 20px;
+}
+
+.ui-charts .ant-list-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ui-charts .ant-list-item-content {
+	display: block;
+}
