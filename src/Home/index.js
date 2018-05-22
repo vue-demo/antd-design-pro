@@ -188,13 +188,14 @@ class Home extends React.Component {
           <TabPane tab="销售额" key="1" forceRender={true}>
             <Row className="ui-rect-wrap" gutter={24}>
               <Col span={16}>
-                <div className="ui-charts" ref="pie">
+                <div className="ui-charts">
                   <ECharts option={this.state.pie} notMerge={true} lazyUpdate={true} style={{height: '300px'}}/>
                 </div>
               </Col>
               <Col span={8}>
                 <div className="ui-charts">
                   <List
+                    loading={this.state.loading}
                     header={<div>门店综合排名</div>}
                     dataSource={this.state.dataList}
                     renderItem={(item,i) => (<List.Item>
@@ -209,13 +210,14 @@ class Home extends React.Component {
           <TabPane tab="访问量" key="2" forceRender={true}>
             <Row className="ui-rect-wrap" gutter={24}>
               <Col span={16}>
-                <div className="ui-charts" ref="line">
+                <div className="ui-charts">
                   <ECharts option={this.state.line} notMerge={true} lazyUpdate={true} style={{height: '300px'}}/>
                 </div>
               </Col>
               <Col span={8}>
                 <div className="ui-charts">
                   <List
+                    loading={this.state.loading}
                     header={<div>门店综合排名</div>}
                     dataSource={this.state.dataList}
                     renderItem={(item,i) => (<List.Item>

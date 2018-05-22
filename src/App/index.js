@@ -48,10 +48,10 @@ class App extends React.Component {
               <Menu.Item key="4"><Link to="/StockIn" replace>入库单</Link></Menu.Item>
               <Menu.Item key="5"><Link to="/StockOut" replace>出库单</Link></Menu.Item>
             </SubMenu>
-            <SubMenu key="6" title={<span><Icon type="table" /><span>Table</span></span>}>
-              <Menu.Item key="7">nav 1</Menu.Item>
-              <Menu.Item key="8">nav 2</Menu.Item>
-              <Menu.Item key="9">nav 3</Menu.Item>
+            <SubMenu key="6" title={<span><Icon type="table" /><span>资料管理</span></span>}>
+              <Menu.Item key="7">品类资料</Menu.Item>
+              <Menu.Item key="8">客户资料</Menu.Item>
+              <Menu.Item key="9">员工资料</Menu.Item> 
             </SubMenu>
             <SubMenu key="10" title={<span><Icon type="form" /><span>Form</span></span>}>
               <Menu.Item key="11">nav 1</Menu.Item>
